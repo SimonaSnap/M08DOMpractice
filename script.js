@@ -26,8 +26,9 @@ newPos.appendChild(inputEl);
 
 function addItem(inputEl){
     var addEl = document.createElement("li");
-    var addText = document.createTextNode(inputEl.value);
-    console.log(addText);
+    var userInput = inputEl.value;
+    var addText = document.createTextNode(userInput);
+    console.log(userInput);
     addEl.appendChild(addText);
 
     var addPos = document.getElementsByTagName("ul")[1];
