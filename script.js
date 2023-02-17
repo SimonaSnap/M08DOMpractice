@@ -28,16 +28,18 @@ var addEl = document.createElement("li");
 var userInput = textBox.value;
 var addText = document.createTextNode(userInput);
 
+var addPos = document.getElementsByTagName("ul")[1];
+
 submitBtn.addEventListener("click", addItem)
 
 function addItem(){
     var addEl = document.createElement("li");
     var userInput = textBox.value;
     var addText = document.createTextNode(userInput);
-    console.log(userInput);
+    //console.log(userInput);
     addEl.appendChild(addText);
 
-    var addPos = document.getElementsByTagName("ul")[1];
+    console.log(addPos);
     addPos.appendChild(addEl);
     console.log(addEl);
 
