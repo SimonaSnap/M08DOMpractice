@@ -22,12 +22,9 @@ buttonDiv.appendChild(submitBtn);
 submitBtn.textContent = "Add New Grocery Item"
 body.appendChild(buttonDiv);
 
-var newPos = document.getElementsByTagName("ul")[0];
-newPos.appendChild(inputEl);
-
-var addEl = document.createElement("li");
-var userInput = textBox.value;
-var addText = document.createTextNode(userInput);
+// var addEl = document.createElement("li");
+// var userInput = textBox.value;
+// var addText = document.createTextNode(userInput);
 
 submitBtn.addEventListener("click", addItem)
 
