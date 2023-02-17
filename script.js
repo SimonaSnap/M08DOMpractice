@@ -28,11 +28,10 @@ var addEl = document.createElement("li");
 var userInput = textBox.value;
 var addText = document.createTextNode(userInput);
 
-var addPos = document.getElementsByTagName("ul")[1];
-
 submitBtn.addEventListener("click", addItem)
 
 function addItem(){
+    var addPos = document.getElementsByTagName("ul")[0];
     var addEl = document.createElement("li");
     var userInput = textBox.value;
     var addText = document.createTextNode(userInput);
