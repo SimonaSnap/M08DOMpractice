@@ -20,7 +20,7 @@ var submitBtn = document.createElement("button");
 buttonDiv.appendChild(textBox);
 buttonDiv.appendChild(submitBtn);
 submitBtn.textContent = "Add New Grocery Item"
-
+body.appendChild(buttonDiv);
 
 var newPos = document.getElementsByTagName("ul")[0];
 newPos.appendChild(inputEl);
