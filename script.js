@@ -39,7 +39,7 @@ function addItem(){
     //console.log(userInput);
     addEl.appendChild(addText);
 
-    console.log(addEl);
+    console.log(addPos);
     //addPos.appendChild(addEl);
 
 }
