@@ -12,3 +12,13 @@ var position = document.getElementsByTagName('ul')[0];
 
 // Insert the new element into its position.
 position.appendChild(newEl);
+
+var textBox = document.createElement("input");
+var submitBtn = document.createElement("button");
+
+var inputEl = document.createElement("li");
+inputEl.appendChild(textBox);
+inputEl.appendChild(submitBtn);
+
+var newPos = document.getElementsByTagName("ul")[0];
+newPos.appendChild(inputEl);
