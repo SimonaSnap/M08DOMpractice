@@ -24,9 +24,9 @@ submitBtn.textContent = "Add New Grocery Item"
 var newPos = document.getElementsByTagName("ul")[0];
 newPos.appendChild(inputEl);
 
-function addItem(inputEl){
+function addItem(){
     var addEl = document.createElement("li");
-    var userInput = inputEl.value;
+    var userInput = textBox.value;
     var addText = document.createTextNode(userInput);
     console.log(userInput);
     addEl.appendChild(addText);
