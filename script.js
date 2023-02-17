@@ -32,7 +32,8 @@ function addItem(){
     addEl.appendChild(addText);
 
     var addPos = document.getElementsByTagName("ul")[1];
-    addPos.appendChild(addEl);
+    addPos.append(addEl);
+    console.log(addEl);
 
 }
 
