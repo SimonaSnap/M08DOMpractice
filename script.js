@@ -1,3 +1,4 @@
+var body = document.body;
 // Create a new element and store it in a variable.
 var newEl = document.createElement('li');
 
@@ -13,13 +14,13 @@ var position = document.getElementsByTagName('ul')[0];
 // Insert the new element into its position.
 position.appendChild(newEl);
 
+var buttonDiv = document.createElement("div"); 
 var textBox = document.createElement("input");
 var submitBtn = document.createElement("button");
-
-var inputEl = document.createElement("li");
-inputEl.appendChild(textBox);
-inputEl.appendChild(submitBtn);
+buttonDiv.appendChild(textBox);
+buttonDiv.appendChild(submitBtn);
 submitBtn.textContent = "Add New Grocery Item"
+
 
 var newPos = document.getElementsByTagName("ul")[0];
 newPos.appendChild(inputEl);
